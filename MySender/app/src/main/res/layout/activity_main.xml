@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/send_text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSendTextClick"
+        android:text="Send Text Content" />
+
+    <Button
+        android:id="@+id/send_binary_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_text_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSendBinaryClick"
+        android:text="Send Binary Content" />
+
+    <Button
+        android:id="@+id/send_multiple_pieces_of_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_binary_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSendMultiplePiecesClick"
+        android:text="Send Multiple Pieces of Content" />
+
+    <Button
+        android:id="@+id/send_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_multiple_pieces_of_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSendCustomClick"
+        android:text="通过Action调用其它App" />
+
+    <Button
+        android:id="@+id/send_custom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_custom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onSendCustom2Click"
+        android:text="通过ComponentName调用其它应用" />
+</RelativeLayout>
